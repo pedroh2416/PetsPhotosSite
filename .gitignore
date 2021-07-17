@@ -1,4 +1,3 @@
-photos/
 node_modules/
 *.zip
 unsplash/*.tsv*
