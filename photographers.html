@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographers</title>
+</head>
+
+<body>
+    
+    {% unless page.url == '/' %}
+    	<a href="/">Home</a>
+{% endunless %}
+
+    <h1> {{ site }}</h1>
+    <h1>Photographers</h1>
+
+    <p>Here is a list of the photographers responsible for the wonderful pictures of the pets we have on our website. </p>
+
+
+   
+    <ul>
+        {% for photo in collections.photos %}
+            <li>
+                
+                {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+                
+            </li>
+            {% endfor %}
+        
+    </ul>
+
+</body>
+</html>
