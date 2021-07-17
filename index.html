@@ -1,12 +1,22 @@
----
-title: Welcome
-layout: base
-pagination: 
- data: collections.photos
- size: 10
- alias: photos
----
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+
+
+
+<body style="background-color: ;">
+
+
+    <h1>Pet Photos</h1>
+
+    
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,9 +26,25 @@ pagination:
 </head>
 
 <body>
-    {% if page.url == '/' %}
-    {% include nav.html %}
-    {% endif %}
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about">About</a>
+        <a href="stats">Stats</a>
+        <a href="photographers">Photographers</a>
+      </nav>
+</body>
+</html>
+    
 
     <h2>Welcome</h2>
     <p>Welcome to our website. This site contains professionally photographed pictures of pets, such as dogs, cats, and rats.
@@ -39,24 +65,94 @@ pagination:
 
     
     <div>
-        {% for photo in photos %}
+        
         <li>
-            <a href="{{ photo.url }}">
-                A {{ photo.data.photo_keyword }} photo
-                by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+            <a href="/photos/000/">
+                A dog photo
+                by Jared Murray
             </a>
         </li>
-        {% endfor %}
+        
+        <li>
+            <a href="/photos/001/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/002/">
+                A dog photo
+                by Alan Quirvan
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/003/">
+                A dog photo
+                by April Walker
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/004/">
+                A dog photo
+                by LongX Music
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/005/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/006/">
+                A dog photo
+                by Carissa Weiser
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/007/">
+                A cat photo
+                by Paolo Nicolello
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/008/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </li>
+        
+        <li>
+            <a href="/photos/009/">
+                A cat photo
+                by Andreea Popa
+            </a>
+        </li>
+        
     </div>
 
 
-    {% if pagination.href.previous %}
-<a href="{{ pagination.href.previous}} ">Previous Page</a>
-{% endif %}
-{% if pagination.href.next %}
-<a href="{{pagination.href.next}}">Next Page</a>
-{% endif %}
+    
+
+<a href="/1/">Next Page</a>
+
 
    
 </body>
+</html>
+    
+    <footer>
+        <p>Site Created by Alfredo Alcantar, Arsal Khan, Josephine Overbeek, Pedro Hernandez</p>
+        <p>Contact: <a href="mailto:Group3@csu.fullerton.edu.com">Group3@csu.fullerton.edu.com</a></p>
+    </footer>
+</body>
+
+
 </html>
