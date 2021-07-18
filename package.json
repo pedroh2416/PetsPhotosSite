@@ -6,7 +6,6 @@
     "build": "npx eleventy",
     "start": "npx @11ty/eleventy --serve"
   },
-  "homepage": "/silly-eleventy-demo",
   "author": "Kenytt Avery",
   "repository": {
     "type": "git",
