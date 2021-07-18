@@ -11,7 +11,7 @@
 <body>
     
     {% unless page.url == '/' %}
-    	<a href="/index.html">Home</a>
+    	<a href="{{ '/' | url }}">Home</a>
 {% endunless %}
 
     <h1> {{ site }}</h1>

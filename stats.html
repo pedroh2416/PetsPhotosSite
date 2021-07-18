@@ -6,7 +6,7 @@
   </head>
   <body>
     {% unless page.url == '/'%}
-        	<a href="/">Home</a>
+        	<a href="{{ '/' | url }}">Home</a>
     {% endunless %}
     <br>
     <h1>Photo Stats</h1>
