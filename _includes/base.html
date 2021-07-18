@@ -7,8 +7,11 @@ site: Pet Photos
 </head>
 
 
-
-<body style="background-color: {{ color_keyword | photos/ }};">
+{% for photo in collections.photos %}
+{% if page.url == photo.url %}
+<body style="background-color: {{ photo.data.color_keyword }}">
+    {% endif %}
+    {% endfor %}
 
 
     <h1>{{ site }}</h1>
