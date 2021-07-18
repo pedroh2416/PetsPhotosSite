@@ -17,8 +17,8 @@ site: Pet Photos
 
     <h1>{{ site }}</h1>
 
-    {% unless page.url == '/' %}
-    	<a href="/">Home</a>
+    {% unless page.url == "{{ '/' | url }}" %}
+    	<a href="{{ '/' | url }}">Home</a>
     
         {% endunless %}
 
