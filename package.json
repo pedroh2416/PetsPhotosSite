@@ -3,8 +3,8 @@
   "description": "CPSC 349 - Summer 2021 - Project 1",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "deploy": "gh-pages -d _site"
+    "build": "npx eleventy",
+    "start": "npx @11ty/eleventy --serve"
   },
   "homepage": "/silly-eleventy-demo",
   "author": "Kenytt Avery",
@@ -13,8 +13,7 @@
     "url": "git+https://github.com/ProfAvery/cpsc349-project1.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "gh-pages": "^3.2.3"
+    "@11ty/eleventy": "^0.12.1"
   },
   "keywords": [],
   "license": "UNLICENSED"

@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
 };
-return {
-    pathPrefix: "/silly-eleventy-demo/"
-}
+module.exports = {
+    pathPrefix: "/cpsc349-project1"
+};
 
