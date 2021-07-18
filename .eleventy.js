@@ -2,6 +2,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
 };
 module.exports = {
-    pathPrefix: "/cpsc349-project1"
+    pathPrefix: "/PetsPhotosSite"
 };
 
